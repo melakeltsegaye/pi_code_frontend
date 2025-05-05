@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&family=Carter+One&family=DM+Serif+Display&family=Ephesis&family=Fira+Sans:ital@1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Khand:wght@500&family=Kumbh+Sans:wght@100..900&family=Lobster&family=Manrope&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@500&family=Playwrite+CO+Guides&family=Playwrite+MX+Guides&family=Poppins:wght@300;400;700&family=Roboto:wght@300&family=Tilt+Neon&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    * {
+        transition: 100ms linear;
+        
+    }
+    button {
+        box-shadow: 5px 5px 2px 0px black;
+        padding-top: 0.25rem /* 4px */;
+    padding-bottom: 0.25rem /* 4px */;
+    padding-left: 1rem /* 16px */;
+    padding-right: 1rem /* 16px */;
+    
+    border: solid 1px rgb(55 30 128 / var(--tw-border-opacity, 1)) /* #371e80 */;
+    border-radius: 4px;
+    }
+    .b1 {
+        @apply bg-white hover:bg-[#371E80] hover:text-white text-[#371E80] cursor-pointer font-bold;
+    }
+    .b2 {
+        @apply bg-[#371E80] text-white hover:bg-white hover:text-[#371E80] cursor-pointer font-bold;
+    }
+    .t_color {
+        color: #371E80;
+    }
+    a:hover {
+        color: #371E80;
+        font-weight: bold;
+    }
+    
+    span {
+        color: #371E80;
+    }
+    .course {
+       @apply w-[20rem] h-[24rem] bg-gray-300 md:w-[23rem] p-4 ;
+    }
+    .course_cont {
+        @apply flex flex-grow-0 flex-col  pt-4 h-48 justify-between overflow-y-auto;
+    }
+    .course_heding {
+        @apply font-bold  text-xl ;
+    }
+    .course_des {
+        @apply text-base pt-1 text-gray-700;
+    }
+    .anch {
+        @apply py-4 w-full hover:bg-gray-200 text-center ;
+    }
+    .info_box {
+        @apply p-3 bg-white rounded-md border border-l-4 border-l-gray-500;
+    }
+    .info_box h1 {
+        @apply text-[#371E80];
+    }    
+}
